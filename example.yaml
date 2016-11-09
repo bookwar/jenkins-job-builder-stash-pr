@@ -1,0 +1,22 @@
+- job:
+    name: 'stash-pr-test'
+
+    triggers:
+      - stash:
+          spec: '* * * * *'
+          cron: '* * * * *'
+          stash_host: 'http://git.example.org/'
+          project_code: '~username'
+          repository_name: 'my_repository'
+          credentials_id: 'StashGitCredentials'
+          ci_skip_phrases: 'NO TEST'
+          ci_build_phrases: 'test this please'
+          target_branches_to_build: ''
+          ignore_ssl: 'true'
+          check_destination_commit: 'false'
+          check_mergeable: 'false'
+          merge_on_success: 'false'
+          check_not_conflicted: 'false'
+          only_build_on_comment: 'false'
+          delete_previous_build_finish_comments: 'false'
+          cancel_outdated_jobs_enabled: 'true'
