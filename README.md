@@ -1,0 +1,1 @@
+# jenkins-job-builder-stash-pullrequest-builder
