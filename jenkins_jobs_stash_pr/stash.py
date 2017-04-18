@@ -16,6 +16,8 @@ OPTIONAL = [
     ('spec', 'spec', ''),
     ('cron', 'cron', ''),
     ('credentials_id','credentialsId', ''),
+    ('username','username', ''),  # support for ver < 1.5.0
+    ('password','password', ''),  # support for ver < 1.5.0
     ('ci_skip_phrases', 'ciSkipPhrases', 'NO TEST'),
     ('ci_build_phrases', 'ciBuildPhrases', 'test this please'),
     ('target_branches_to_build', 'targetBranchesToBuild',''),
